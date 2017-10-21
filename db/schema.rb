@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "closing_time"
   end
 
+  create_table "costumes", force: :cascade do |t|
+    t.string "name"
+    t.integer "price"
+    t.string "size"
+    t.string "image_url"
+  end
+
   create_table "haunted_houses", force: :cascade do |t|
     t.string "name"
     t.string "location"
