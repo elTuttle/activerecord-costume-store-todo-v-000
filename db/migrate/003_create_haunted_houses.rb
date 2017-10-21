@@ -7,11 +7,9 @@ class CreateHauntedHouses < ActiveRecord::Migration
       t.string :theme
       t.integer :price
       t.boolean :family_friendly
-      t.integer :costume_inventory
-      t.integer :number_of_employees
-      t.boolean :still_in_business?
       t.datetime :opening_time
       t.datetime :closing_time
+      t.string :description
     end
   end
 end
