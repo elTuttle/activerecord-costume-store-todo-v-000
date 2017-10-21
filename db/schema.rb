@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
-  create_table :costumes do |t|
-    t.string :name
-    t.integer :price
-    t.string :size
-    t.string :image_url
-  end
-
   create_table "costume_stores", force: :cascade do |t|
     t.string "name"
     t.string "location"
